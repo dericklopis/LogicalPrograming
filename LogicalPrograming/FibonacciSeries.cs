@@ -10,19 +10,20 @@ namespace LogicalPrograming
     {
         public static void Series()
          {
+            int num=0;
             Console.WriteLine("Enter First number: ");
             int num1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter Second number: ");
             int num2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter any number: ");
+            Console.WriteLine("Repeat till number: ");
             int N = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(" " + num1, + num2);
-            for (int i=2;i<=N; i++)
+            while (num <= N)
             {
-                N=num1+num2;
-                Console.WriteLine(" " + N);
+                num=num1+num2;
+                Console.WriteLine(" " + num);
                 num1=num2;
-                num2=N;
+                num2=num;
             }
             Console.ReadLine();
         }
