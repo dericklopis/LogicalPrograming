@@ -11,7 +11,7 @@ namespace LogicalPrograming
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose one program from below options");
-            Console.WriteLine("1:FibonacciSeries \n2:PerfectNumbers");
+            Console.WriteLine("1:FibonacciSeries \n2:PerfectNumbers \n3:Prime numbers");
             string options = Console.ReadLine();
             switch (options)
             {
@@ -20,6 +20,9 @@ namespace LogicalPrograming
                     break;
                 case "2":
                     PerfectNumbers.PerfectNum();
+                    break;
+                case "3":
+                    PrimeNumbers.Prime();
                     break;
             }
             Console.ReadLine();
