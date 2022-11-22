@@ -11,7 +11,7 @@ namespace LogicalPrograming
         public static void Reverse()
             {
                 int reverse = 0, rem;
-                Console.Write("Enter the number to be Reversed: ");
+                Console.WriteLine("Enter the number to be Reversed: ");
                 int N= int.Parse(Console.ReadLine());
                 while (N!=0)
                 {
@@ -19,7 +19,7 @@ namespace LogicalPrograming
                    reverse=reverse*10+rem;
                    N/=10;
                 }
-                Console.Write("Reversed Number: "+reverse);
+                Console.WriteLine("Reversed Number: "+reverse);
                 Console.ReadLine();
         }
     }
