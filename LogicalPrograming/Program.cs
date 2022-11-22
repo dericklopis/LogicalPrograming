@@ -11,7 +11,7 @@ namespace LogicalPrograming
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose one program from below options");
-            Console.WriteLine("1:FibonacciSeries \n2:PerfectNumbers \n3:Prime numbers \n4:Reverse a number \n5:Coupon numbers");
+            Console.WriteLine("1:FibonacciSeries \n2:PerfectNumbers \n3:Prime numbers \n4:Reverse a number \n5:Coupon numbers \n6:Stop Watch");
             string options = Console.ReadLine();
             switch (options)
             {
@@ -29,6 +29,9 @@ namespace LogicalPrograming
                     break;
                 case "5":
                     CouponNumbers.Coupon();
+                    break;
+                case "6":
+                    WatchStop.time();
                     break;
             }
             Console.ReadLine();
